@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang · Starter Web</title>
+  <meta name="description" content="Tentang template Starter Web—struktur, komponen, dan praktik yang digunakan.">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="preload" href="/assets/css/style.css" as="style">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Tentang · Starter Web">
+  <meta property="og:description" content="Tentang template Starter Web—struktur, komponen, dan praktik yang digunakan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="/assets/img/og-image.png">
+</head>
+<body>
+<div id="skip"><a href="#main">Lewati ke konten utama</a></div>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">
+      <img src="/assets/img/logo.svg" width="32" height="32" alt="" aria-hidden="true">
+      <span>Starter Web</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Navigasi utama">
+      <a href="/">Beranda</a>
+      <a href="/about.html">Tentang</a>
+      <a href="/contact.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section class="page-header">
+  <div class="container">
+    <h1>Tentang Template</h1>
+    <p>Ringkas, modern, dan mudah dikembangkan.</p>
+  </div>
+</section>
+
+<section class="container prose" id="struktur">
+  <h2>Struktur Proyek</h2>
+  <pre><code>starter-website/
+├─ index.html
+├─ about.html
+├─ contact.html
+├─ privacy.html
+└─ assets/
+   ├─ css/style.css
+   ├─ js/main.js
+   └─ img/ (logo.svg, hero.svg, favicon.svg, og-image.png)</code></pre>
+
+  <h2 id="komponen">Komponen</h2>
+  <ul>
+    <li>Header responsif dengan menu hamburger.</li>
+    <li>Hero section dan grid kartu.</li>
+    <li>Form dengan validasi sederhana.</li>
+    <li>Footer dengan form newsletter.</li>
+  </ul>
+
+  <h2 id="praktik">Praktik Baik</h2>
+  <ul>
+    <li>SEO & meta Open Graph dasar.</li>
+    <li>Aksesibilitas: skip link, label form, aria-live.</li>
+    <li>Performansi: preload CSS, aset SVG ringan.</li>
+  </ul>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Starter Web</h3>
+      <p>Template ringan untuk memulai proyek website statis Anda.</p>
+    </div>
+    <nav aria-label="Tautan footer">
+      <a href="/">Beranda</a>
+      <a href="/about.html">Tentang</a>
+      <a href="/contact.html">Kontak</a>
+      <a href="/privacy.html">Privasi</a>
+    </nav>
+    <form class="newsletter" id="newsletterForm" aria-label="Form newsletter">
+      <label for="emailNews">Berlangganan kabar terbaru</label>
+      <div class="row">
+        <input type="email" id="emailNews" name="email" placeholder="email@contoh.com" required>
+        <button type="submit">Langganan</button>
+      </div>
+      <p class="form-note" id="newsMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <p class="copyright">© 2025 Starter Web. Dibuat dengan HTML, CSS, & JS.</p>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
